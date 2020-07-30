@@ -1,0 +1,20 @@
+{
+  "id": "zrr.app.sub",
+  "name": "zrr应用订阅",
+  "author": "@zrr",
+  "icon": "https://avatars0.githubusercontent.com/u/33308659?s=460&u=9223074586cb14f2ae7ee0953515f8781ded8be9&v=4",
+  "repo": "https://github.com/lowking/Scripts/",
+  "apps": [
+    {
+           "id": "htt",
+      "name": "惠头条",
+      "keys": ["htt_dongfangnameA", "htt_signurlcknameA", "htt_signbdnameA", "htt_videonameA", "htt_smvideonameA"],
+      "author": "@作者不知道",
+      "repo": "https://github.com/",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/box.png",
+        "https://raw.githubusercontent.com/Orz-3/task/master/box.png"
+      ]
+    }
+  ]
+}
