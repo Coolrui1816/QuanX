@@ -9,6 +9,15 @@
       "id": "htt",
       "name": "惠头条",
       "keys": ["htt_dongfangnameA", "htt_signurlcknameA", "htt_signbdnameA", "htt_videonameA", "htt_smvideonameA"],
+      "settings": [
+        {
+          "id": "httIsDeleteAllCookie",
+          "name": "开启/关闭删除Cookie",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认关闭"
+        }
+    ],
       "author": "@iamxiaoyuge",
       "repo": "https://github.com/Coolrui1816/QuanX/blob/master/htt/htt_task2.js",
       "icons": "https://raw.githubusercontent.com/Coolrui1816/QuanX/master/img/htt_app.png"
