@@ -9,8 +9,8 @@
       "id": "htt",
       "name": "惠头条",
       "keys": ["htt_dongfangnameA", "htt_signurlcknameA", "htt_signbdnameA", "htt_videonameA", "htt_smvideonameA"],
-      "author": "@作者不知道",
-      "repo": "https://github.com/",
+      "author": "@iamxiaoyuge",
+      "repo": "https://github.com/Coolrui1816/QuanX/blob/master/htt/htt_task2.js",
       "icons": [
         "https://raw.githubusercontent.com/Coolrui1816/QuanX/master/img/htt_app.png"
       ]
