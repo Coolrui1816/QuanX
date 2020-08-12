@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,taobao.com,PROXY
 DOMAIN-SUFFIX,detail.tmall.com,PROXY
 DOMAIN-SUFFIX,main.taobao.com,PROXY
 DOMAIN-SUFFIX,h5.taobao.com,PROXY
+DOMAIN-SUFFIX,m.tb.cn,PROXY
 DOMAIN-SUFFIX,m.taobao.com,PROXY
 DOMAIN-SUFFIX,detail.m.tmall.com,PROXY
 DOMAIN-SUFFIX,main.m.taobao.com,PROXY
