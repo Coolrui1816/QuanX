@@ -6,7 +6,7 @@ QuanX
 
 1、第一步按右下角的小风车【如果不是这个颜色的请长按小风车，然后设置成这个三色的】
 
-https://raw.githubusercontent.com/Coolrui1816/QuanX/master/img/Help/help_p1.png
+!(https://raw.githubusercontent.com/Coolrui1816/QuanX/master/img/Help/help_p1.png)
 
 
 2、第二步点击这个链接条
