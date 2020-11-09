@@ -5,6 +5,7 @@ QuanX
 小白食用方法：
 
 1、第一步按右下角的小风车【如果不是这个颜色的请长按小风车，然后设置成这个三色的】
+
 ![image](https://raw.githubusercontent.com/Coolrui1816/QuanX/master/img/Help/help_p1.png) 
 
 
