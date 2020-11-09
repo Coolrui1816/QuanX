@@ -15,7 +15,7 @@ QuanX自用的，不定时更新搬运，js脚本不是我写的，有代码问�
 
 3、第三步复制懒人&小白全局配置地址【注意要复制完整，后缀是.conf】
 可以用我的⤵️，或者用其他大佬的。
-https://github.com/Coolrui1816/QuanX/raw/master/QuantumultX_All_Zrr.conf
+https://raw.githubusercontent.com/Coolrui1816/QuanX/master/QuantumultX_All_Zrr.conf
 
 ![image](https://raw.githubusercontent.com/Coolrui1816/QuanX/master/img/Help/help_p3.png) 
 
