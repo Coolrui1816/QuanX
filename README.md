@@ -20,3 +20,6 @@ https://raw.githubusercontent.com/Coolrui1816/QuanX/master/QuantumultX_All_Zrr.c
 ![image](https://raw.githubusercontent.com/Coolrui1816/QuanX/master/img/Help/help_p3.png) 
 
 恭喜你，完成了。。。里面可能有白给机场，没有就加入自己的。
+
+【注意！注意！注意！】
+默认会自动更新改动，如果需要自己修改配置，再按链接条的位置取消更新关联就好了。
