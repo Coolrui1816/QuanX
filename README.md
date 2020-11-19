@@ -7,7 +7,9 @@ js脚本不是我写的，有代码问题请咨询作者。
 1、第一步按右下角的小风车【如果不是这个颜色的请长按小风车，然后设置成这个三色的】
 
 ![image](https://gitee.com/zhangzr/QuanX/raw/master/img/Help/help_p1.png) 
-
+<p align="center">
+<img src="https://gitee.com/zhangzr/QuanX/raw/master/img/Help/help_p1.png" width="800px"/>
+</p>
 
 2、第二步点击这个链接条
 
