@@ -25,4 +25,4 @@ https://raw.githubusercontent.com/Coolrui1816/QuanX/master/QuantumultX_All_Zrr.c
 
 恭喜你，完成了。。。里面可能有白给机场，没有就加入自己的。
 
-
+对Qx有一定了解的可以从配置文件里面复制规则到自己QX里面食用。
