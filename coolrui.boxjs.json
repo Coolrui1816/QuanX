@@ -1,14 +1,14 @@
 {
   "id": "Coolrui1816.app.sub",
-  "name": "zrr应用订阅",
+  "name": "Coolrui1816应用订阅",
   "author": "@Coolrui1816",
-  "icon": "https://raw.githubusercontent.com/Coolrui1816/QuanX/master/img/zrr.png",
+  "icon": "https://gitee.com/zhangzr/QuanX/raw/master/img/zrr.png",
   "repo": "https://github.com/Coolrui1816/QuanX/",
   "apps": [
-    {
+		{
 			"id": "qqreads",
 			"name": "QQ阅读多账号管理",
-			"keys": ["qqreadhd1","qqreadtimehd1","qqreadhd2","qqreadtimehd2","qqreadhd3","qqreadtimehd3","qqreadhd4","qqreadtimehd4","qqreadhd5","qqreadtimehd5","qqreadhd6","qqreadtimehd6","qqreadhd7","qqreadtimehd7","qqreadhd8","qqreadtimehd8","qqreadhd9","qqreadtimehd9","qqreadhd10","qqreadtimehd10","qqreadhd11","qqreadtimehd11","qqreadtimehd12","qqreadtimehd13","qqreadtimehd14","qqreadtimehd15","qqreadtimehd16","qqreadtimehd17","qqreadtimehd18","qqreadtimehd19","qqreadtimehd20"],
+			"keys": ["qqreadhd1","qqreadtimehd1","qqreadhd2","qqreadtimehd2","qqreadhd3","qqreadtimehd3","qqreadhd4","qqreadtimehd4","qqreadhd5","qqreadtimehd5","qqreadhd6","qqreadtimehd6","qqreadhd7","qqreadtimehd7","qqreadhd8","qqreadtimehd8","qqreadhd9","qqreadtimehd9","qqreadhd10","qqreadtimehd10","qqreadhd11","qqreadtimehd11"],
 			"settings": [
 				{
 					"id": "jbidhj",
@@ -95,5 +95,5 @@
 				"https://raw.githubusercontent.com/Orz-3/task/master/QQ.png"
 			]
 		}
-    ]
+  ]
 }
