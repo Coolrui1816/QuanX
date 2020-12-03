@@ -8,7 +8,7 @@
 		{
 			"id": "qqreads",
 			"name": "QQ阅读多账号管理",
-			"keys": ["qqreadhd1","qqreadtimehd1","qqreadhd2","qqreadtimehd2","qqreadhd3","qqreadtimehd3","qqreadhd4","qqreadtimehd4","qqreadhd5","qqreadtimehd5","qqreadhd6","qqreadtimehd6","qqreadhd7","qqreadtimehd7","qqreadhd8","qqreadtimehd8","qqreadhd9","qqreadtimehd9","qqreadhd10","qqreadtimehd10","qqreadhd11","qqreadtimehd11"],
+			"keys": ["qqreadhd1","qqreadtimehd1","qqreadhd2","qqreadtimehd2","qqreadhd3","qqreadtimehd3","qqreadhd4","qqreadtimehd4","qqreadhd5","qqreadtimehd5","qqreadhd6","qqreadtimehd6","qqreadhd7","qqreadtimehd7","qqreadhd8","qqreadtimehd8","qqreadhd9","qqreadtimehd9","qqreadhd10","qqreadtimehd10","qqreadhd11","qqreadtimehd11","qqreadtimehd12","qqreadtimehd13","qqreadtimehd14","qqreadtimehd15","qqreadtimehd16","qqreadtimehd17","qqreadtimehd18","qqreadtimehd19","qqreadtimehd20"],
 			"settings": [
 				{
 					"id": "jbidhj",
@@ -84,6 +84,38 @@
             {
               "key": "23",
               "label": "12个账号"
+            }
+            {
+                "key": "25",
+                "label": "13个账号"
+            }
+            {
+                "key": "27",
+                "label": "14个账号"
+            }
+            {
+                "key": "29",
+                "label": "15个账号"
+            }
+            {
+                "key": "31",
+                "label": "16个账号"
+            }
+            {
+                "key": "33",
+                "label": "17个账号"
+            }
+            {
+                "key": "35",
+                "label": "18个账号"
+            }
+            {
+                "key": "37",
+                "label": "19个账号"
+            }
+            {
+                "key": "39",
+                "label": "20个账号"
             }
           ]
 				}
