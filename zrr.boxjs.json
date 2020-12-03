@@ -22,6 +22,127 @@
       "repo": "https://github.com/Coolrui1816/QuanX/blob/master/htt/htt_task2.js",
       "icons": "https://raw.githubusercontent.com/Coolrui1816/QuanX/master/img/htt_app.png"
       
-    }
+  {
+			"id": "qqreads",
+			"name": "企鹅阅读多账号管理",
+			"keys": ["qqreadhd1","qqreadtimehd1","qqreadhd2","qqreadtimehd2","qqreadhd3","qqreadtimehd3","qqreadhd4","qqreadtimehd4","qqreadhd5","qqreadtimehd5","qqreadhd6","qqreadtimehd6","qqreadhd7","qqreadtimehd7","qqreadhd8","qqreadtimehd8","qqreadhd9","qqreadtimehd9","qqreadhd10","qqreadtimehd10","qqreadhd11","qqreadtimehd11","qqreadtimehd12","qqreadtimehd13","qqreadtimehd14","qqreadtimehd15","qqreadtimehd16","qqreadtimehd17","qqreadtimehd18","qqreadtimehd19","qqreadtimehd20"],
+			"settings": [
+				{
+					"id": "jbidhj",
+					"name": "多账号管理",
+					"val": "",
+					"type": "textarea",
+					"placeholder": "默认是空值(点击以展开说明)",
+					"autoGrow": true,
+					"rows": 1,
+					"desc": "填写格式示例：1,2 以英文逗号分隔多个账号数，如2个账号就是1,2"
+				},
+                                 {
+					"id": "jbid",
+					"name": "获取账号Cookie",
+					"val": "",
+					"type": "textarea",
+					"placeholder": "默认是空值(点击以展开说明)",
+					"autoGrow": true,
+					"rows": 1,
+					"desc": "需要获取第几个账号的Cookie就填写对应的数字，如第1个账号填写1，第2个账号就填写2，依次类推"
+				},
+				{
+					"id": "zhs",
+					"name": "默认2个账号，请根据自身qq数量选择账号数量",
+					"val": "3",
+					"type": "radios",
+					"desc": "请根据实际账号数量选择",
+                                        "items": [
+            {
+              "key": "1",
+              "label": "1个账号"
+            },
+            {
+              "key": "3",
+              "label": "2个账号"
+            },
+            {
+              "key": "5",
+              "label": "3个账号"
+            },
+            {
+              "key": "7",
+              "label": "4个账号"
+            },
+            {
+              "key": "9",
+              "label": "5个账号"
+            },
+            {
+              "key": "11",
+              "label": "6个账号"
+            },
+            {
+              "key": "13",
+              "label": "7个账号"
+            },
+            {
+              "key": "15",
+              "label": "8个账号"
+            },
+            {
+              "key": "17",
+              "label": "9个账号"
+            },
+            {
+              "key": "19",
+              "label": "10个账号"
+            },
+            {
+              "key": "21",
+              "label": "11个账号"
+            },
+            {
+              "key": "23",
+              "label": "12个账号"
+            }
+            {
+              "key": "25",
+              "label": "13个账号"
+            }
+            {
+              "key": "27",
+              "label": "14个账号"
+            }
+            {
+              "key": "29",
+              "label": "15个账号"
+            }
+            {
+              "key": "31",
+              "label": "16个账号"
+            }
+            {
+              "key": "33",
+              "label": "17个账号"
+            }
+            {
+              "key": "35",
+              "label": "18个账号"
+            }
+            {
+              "key": "37",
+              "label": "19个账号"
+            }
+            {
+              "key": "39",
+              "label": "20个账号"
+            }
+          ]
+				}
+			],
+			"author": "@photonmang",
+			"repo": "https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js",
+			"icons": [
+				"https://raw.githubusercontent.com/wangdongwdd/QuantumultX/master/img/qeyd.png",
+				"https://raw.githubusercontent.com/wangdongwdd/QuantumultX/master/img/qeyd.png"
+			]
+		}
   ]
 }
