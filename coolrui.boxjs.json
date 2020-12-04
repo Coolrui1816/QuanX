@@ -12,6 +12,39 @@
 			"keys": ["qqreadhd1","qqreadtimehd1","qqreadhd2","qqreadtimehd2","qqreadhd3","qqreadtimehd3","qqreadhd4","qqreadtimehd4","qqreadhd5","qqreadtimehd5","qqreadhd6","qqreadtimehd6","qqreadhd7","qqreadtimehd7","qqreadhd8","qqreadtimehd8","qqreadhd9","qqreadtimehd9","qqreadhd10","qqreadtimehd10","qqreadhd11","qqreadtimehd11","qqreadhd12","qqreadtimehd12","qqreadhd13","qqreadtimehd13","qqreadhd14","qqreadtimehd14","qqreadhd15","qqreadtimehd15","qqreadhd16","qqreadtimehd16","qqreadhd17","qqreadtimehd17","qqreadhd18","qqreadtimehd18","qqreadhd19","qqreadtimehd19","qqreadhd20","qqreadtimehd20"],
             "settings": 
             [
+				{     
+                    "id": "QQlogs",
+      "name": "详细响应日志",
+      "val": false,
+      "type": "boolean",
+      "desc": "打印原始执行结果, 用于调试脚本, 一般用户建议关闭."
+    },
+				{
+					"id": "notifyInterval",
+					"name": "默认开启所有通知",
+					"val": "1",
+					"type": "radios",
+					"desc": "请根据实际使用情况选择",
+                                        "items": [
+            {
+              "key": "0",
+              "label": "关闭通知"
+            },
+            {
+              "key": "1",
+              "label": "开启通知"
+            },
+            {
+              "key": "2",
+              "label": "宝箱领取成功通知"
+            },
+            {
+              "key": "3",
+              "label": "宝箱每15次通知一次"
+            }
+            
+          ]
+				},
 				{
 					"id": "jbidhj",
 					"name": "多账号管理",
@@ -20,7 +53,7 @@
 					"placeholder": "默认是空值(点击以展开说明)",
 					"autoGrow": true,
 					"rows": 1,
-					"desc": "填写格式示例：1,2 以英文逗号分隔多个账号数，如2个账号就是1,2"
+					"desc": "填写格式示例：1,2 以英文逗号分隔多个账号数，如2个账号就是1,2。另外注意：从第10个账号开始请改为a-z字母表达，否则后面的账号会一直运行1号账号！"
 				},
                 {
 					"id": "jbid",
@@ -30,7 +63,7 @@
 					"placeholder": "默认是空值(点击以展开说明)",
 					"autoGrow": true,
 					"rows": 1,
-					"desc": "需要获取第几个账号的Cookie就填写对应的数字，如第1个账号填写1，第2个账号就填写2，依次类推"
+					"desc": "需要获取第几个账号的Cookie就填写对应的数字，如第1个账号填写1，第2个账号就填写2，依次类推。另外注意：从第10个账号开始请改为a-z字母表达，否则后面的账号会一直运行1号账号！"
 				},
 				{
 					"id": "zhs",
@@ -124,7 +157,7 @@
 				}
 			],
 			"author": "@Coolrui1816",
-			"repo": "https://raw.githubusercontent.com/photonmang/quantumultX/master/cache/qqread.js",
+			"repo": "https://raw.githubusercontent.com/photonmang/quantumultX/master/cache/qqreads.js",
             "icons":
             [
 				"https://raw.githubusercontent.com/Orz-3/mini/master/QQ.png",
@@ -134,4 +167,3 @@
 		}
     ]
 }
-
