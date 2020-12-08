@@ -8,43 +8,10 @@
     [
 		{
 			"id": "qqreads",
-			"name": "QQ阅读多账号管理",
+			"name": "企鹅阅读-photonmang",
 			"keys": ["qqreadhd1","qqreadtimehd1","qqreadhd2","qqreadtimehd2","qqreadhd3","qqreadtimehd3","qqreadhd4","qqreadtimehd4","qqreadhd5","qqreadtimehd5","qqreadhd6","qqreadtimehd6","qqreadhd7","qqreadtimehd7","qqreadhd8","qqreadtimehd8","qqreadhd9","qqreadtimehd9","qqreadhd10","qqreadtimehd10","qqreadhd11","qqreadtimehd11","qqreadhd12","qqreadtimehd12","qqreadhd13","qqreadtimehd13","qqreadhd14","qqreadtimehd14","qqreadhd15","qqreadtimehd15","qqreadhd16","qqreadtimehd16","qqreadhd17","qqreadtimehd17","qqreadhd18","qqreadtimehd18","qqreadhd19","qqreadtimehd19","qqreadhd20","qqreadtimehd20"],
             "settings": 
             [
-				{     
-                    "id": "QQlogs",
-      "name": "详细响应日志",
-      "val": false,
-      "type": "boolean",
-      "desc": "打印原始执行结果, 用于调试脚本, 一般用户建议关闭."
-    },
-				{
-					"id": "notifyInterval",
-					"name": "默认开启所有通知",
-					"val": "1",
-					"type": "radios",
-					"desc": "请根据实际使用情况选择",
-                                        "items": [
-            {
-              "key": "0",
-              "label": "关闭通知"
-            },
-            {
-              "key": "1",
-              "label": "开启通知"
-            },
-            {
-              "key": "2",
-              "label": "宝箱领取成功通知"
-            },
-            {
-              "key": "3",
-              "label": "宝箱每15次通知一次"
-            }
-            
-          ]
-				},
 				{
 					"id": "jbidhj",
 					"name": "多账号管理",
@@ -53,7 +20,7 @@
 					"placeholder": "默认是空值(点击以展开说明)",
 					"autoGrow": true,
 					"rows": 1,
-					"desc": "填写格式示例：1,2 以英文逗号分隔多个账号数，如2个账号就是1,2。另外注意：从第10个账号开始请改为a-z字母表达，否则后面的账号会一直运行1号账号！"
+					"desc": "填写格式示例：1,2 以英文逗号分隔多个账号数，如2个账号就是1,2"
 				},
                 {
 					"id": "jbid",
@@ -63,7 +30,7 @@
 					"placeholder": "默认是空值(点击以展开说明)",
 					"autoGrow": true,
 					"rows": 1,
-					"desc": "需要获取第几个账号的Cookie就填写对应的数字，如第1个账号填写1，第2个账号就填写2，依次类推。另外注意：从第10个账号开始请改为a-z字母表达，否则后面的账号会一直运行1号账号！"
+					"desc": "需要获取第几个账号的Cookie就填写对应的数字，如第1个账号填写1，第2个账号就填写2，依次类推"
 				},
 				{
 					"id": "zhs",
@@ -157,13 +124,38 @@
 				}
 			],
 			"author": "@Coolrui1816",
-			"repo": "https://raw.githubusercontent.com/photonmang/quantumultX/master/cache/qqreads.js",
+			"repo": "https://raw.githubusercontent.com/photonmang/quantumultX/master/cache/qqread.js",
             "icons":
             [
 				"https://raw.githubusercontent.com/Orz-3/mini/master/QQ.png",
 				"https://raw.githubusercontent.com/Orz-3/task/master/QQ.png"
-            
             ]
-		}
+        },
+        {
+            "id": "qqread",
+            "name": "企鹅阅读-ziye原作者",
+            "keys": ["qqreadbd", "qqreadtimeurl", "qqreadtimehd", "qqreadbd2", "qqreadtimeurl2", "qqreadtimehd2", "qqreadbd3", "qqreadtimeurl3", "qqreadtimehd3", "qqreadbd4", "qqreadtimeurl4", "qqreadtimehd4", "qqreadbd5", "qqreadtimeurl5", "qqreadtimehd5", "qqreadbd6", "qqreadtimeurl6", "qqreadtimehd6", "qqreadbd7", "qqreadtimeurl7", "qqreadtimehd7", "qqreadbd8", "qqreadtimeurl8", "qqreadtimehd8", "qqreadbd9", "qqreadtimeurl9", "qqreadtimehd9", "qqreadbd10", "qqreadtimeurl10", "qqreadtimehd10"],
+            "author": "@ziye",
+            "settings": 
+            [
+                {
+                    "id": "qeSuffix",
+                    "name": "当前账号",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "当前抓取ck记录的账号序号，如：1、2、3、"
+                },
+                {
+                    "id": "qeCount",
+                    "name": "账号个数",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+                }
+            ],
+            "repo": "https://github.com/ziye12/JavaScript/blob/master/Task/qqreads.js",
+            "icons": ["https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.jpg", "https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.jpg"],
+            "script": "https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js"
+        }
     ]
 }
