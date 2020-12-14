@@ -562,3 +562,5 @@ host-suffix, x-art.com, PROXY
 host-suffix, yimg.com, PROXY
 host, api.steampowered.com, PROXY
 host, store.steampowered.com, PROXY
+host-suffix, netflav.com, PROXY
+host-keyword, netflav, PROXY
