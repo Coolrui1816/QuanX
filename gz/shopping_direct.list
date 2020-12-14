@@ -1,0 +1,10 @@
+# > 淘宝
+host-suffix, taobao.com, DIRECT
+host-suffix, tb.cn, DIRECT
+host-suffix, detail.tmall.com, DIRECT
+host-keyword,taobao, DIRECT
+host-keyword,tb, DIRECT
+
+# > 京东
+host-suffix, jd.com, DIRECT
+host-keyword,jd, DIRECT
