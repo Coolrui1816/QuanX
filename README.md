@@ -21,7 +21,7 @@ js脚本不是我写的，有代码问题请咨询作者。
 
 （怕你等着急了🤣 ）
 
-第三步复制懒人&小白全局配置地址【注意要复制完整，后缀是.conf】
+复制懒人&小白全局配置地址【注意要复制完整，后缀是.conf】
 可以用我的⤵️，或者用其他大佬的。
 https://raw.githubusercontent.com/Coolrui1816/QuanX/master/QuantumultX_All_Zrr.conf
 
