@@ -1,0 +1,15 @@
+# 去广告白名单-直连
+
+HOST-SUFFIX,ol.epicgames.com,🎯 全球直连
+HOST,dl.google.com,🎯 全球直连
+HOST,mtalk.google.com,🎯 全球直连
+HOST-SUFFIX,googletraveladservices.com,🎯 全球直连
+HOST-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+HOST,livew.l.qq.com,🎯 全球直连
+HOST,vd.l.qq.com,🎯 全球直连
+HOST,analytics.strava.com,🎯 全球直连
+HOST,msg.umeng.com,🎯 全球直连
+HOST,msg.umengcloud.com,🎯 全球直连
+HOST,tracking.miui.com,🎯 全球直连
+HOST,app.adjust.com,🎯 全球直连
+HOST,bdtj.tagtic.cn,🎯 全球直连
