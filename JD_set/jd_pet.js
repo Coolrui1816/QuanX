@@ -12,6 +12,7 @@
 15 6-18/6 * * * https://raw.githubusercontent.com/Coolrui1816/QuanX/master/JD_set/jd_pet.js, tag=东东萌宠, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdmc.png, enabled=true
 */
 
+*/
 const $ = new Env('东东萌宠');
 let cookiesArr = [], cookie = '', jdPetShareArr = [], isBox = false, notify, newShareCodes;
 //助力好友分享码(最多5个,否则后面的助力失败),原因:京东农场每人每天只有四次助力机会
@@ -19,10 +20,10 @@ let cookiesArr = [], cookie = '', jdPetShareArr = [], isBox = false, notify, new
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好友的shareCode
    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-   'MTAxODc2NTEzOTAwMDAwMDAxMzI5MjIxNw==@MTAxODc2NTEzNDAwMDAwMDAyOTMyNzY1MQ==@MTAxODc2NTEzMjAwMDAwMDAzMDI3MTMyOQ==@MTAxODc2NTEzNDAwMDAwMDAzMDI2MDI4MQ==@MTAxODcxOTI2NTAwMDAwMDAxOTQ3MjkzMw==',
-   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-   'MTAxODc2NTEzOTAwMDAwMDAxMzI5MjIxNw==@MTAxODc2NTEzNDAwMDAwMDAyOTMyNzY1MQ==@MTAxODc2NTEzOTAwMDAwMDAyNzE2MDY2NQ==@MTAxODc2NTEzNDAwMDAwMDAzMDI2MDI4MQ==@MTAxODcxOTI2NTAwMDAwMDAxOTQ3MjkzMw==',
- ]
+  'MTAxODc2NTEzNTAwMDAwMDAwMjg3MDg2MA==@MTAxODc2NTEzMzAwMDAwMDAyNzUwMDA4MQ==@MTAxODc2NTEzMjAwMDAwMDAzMDI3MTMyOQ==@MTAxODc2NTEzNDAwMDAwMDAzMDI2MDI4MQ==@MTAxODcxOTI2NTAwMDAwMDAxOTQ3MjkzMw==',
+  //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
+  'MTAxODc2NTEzMjAwMDAwMDAzMDI3MTMyOQ==@MTAxODcxOTI2NTAwMDAwMDAyNjA4ODQyMQ==@MTAxODc2NTEzOTAwMDAwMDAyNzE2MDY2NQ==@MTE1NDUyMjEwMDAwMDAwNDI0MDM2MDc=',
+]
 let message = '', subTitle = '', option = {};
 let jdNotify = false;//是否关闭通知，false打开通知推送，true关闭通知推送
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
@@ -31,7 +32,7 @@ let randomCount = $.isNode() ? 20 : 5;
 !(async () => {
   await requireConfig();
   if (!cookiesArr[0]) {
-    $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/', {"open-url": "https://bean.m.jd.com/"});
+    $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
     return;
   }
   for (let i = 0; i < cookiesArr.length; i++) {
@@ -44,12 +45,10 @@ let randomCount = $.isNode() ? 20 : 5;
       await TotalBean();
       console.log(`\n开始【京东账号${$.index}】${$.nickName || $.UserName}\n`);
       if (!$.isLogin) {
-        $.msg($.name, `【提示】cookie已失效`, `京东账号${$.index} ${$.nickName || $.UserName}\n请重新登录获取\nhttps://bean.m.jd.com/`, {"open-url": "https://bean.m.jd.com/"});
+        $.msg($.name, `【提示】cookie已失效`, `京东账号${$.index} ${$.nickName || $.UserName}\n请重新登录获取\nhttps://bean.m.jd.com/bean/signIndex.action`, {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
 
         if ($.isNode()) {
           await notify.sendNotify(`${$.name}cookie已失效 - ${$.UserName}`, `京东账号${$.index} ${$.UserName}\n请重新登录获取cookie`);
-        } else {
-          $.setdata('', `CookieJD${i ? i + 1 : "" }`);//cookie失效，故清空cookie。$.setdata('', `CookieJD${i ? i + 1 : "" }`);//cookie失效，故清空cookie。
         }
         continue
       }
@@ -81,7 +80,7 @@ async function jdPet() {
     }
     if (!$.petInfo.goodsInfo) {
       $.msg($.name, '', `【提示】京东账号${$.index}${$.nickName}\n暂未选购新的商品`, { "open-url": "openapp.jdmoble://" });
-      await notify.sendNotify(`${$.name} - ${$.index} - ${$.nickName}`, `【提示】京东账号${$.index}${$.nickName}\n暂未选购新的商品`);
+      if ($.isNode()) await notify.sendNotify(`${$.name} - ${$.index} - ${$.nickName}`, `【提示】京东账号${$.index}${$.nickName}\n暂未选购新的商品`);
       return
     }
     goodsUrl = $.petInfo.goodsInfo && $.petInfo.goodsInfo.goodsUrl;
@@ -104,7 +103,7 @@ async function jdPet() {
       }
       return
     }
-    console.log(`\n【您的${$.name}互助码shareCode】 ${$.petInfo.shareCode}\n`);
+    console.log(`\n【京东账号${$.index}（${$.nickName || $.UserName}）的${$.name}好友互助码】${$.petInfo.shareCode}\n`);
     await taskInit();
     if ($.taskInit.resultCode === '9999' || !$.taskInit.result) {
       console.log('初始化任务异常, 请稍后再试');
@@ -222,8 +221,10 @@ async function masterHelpInit() {
       if(!res.result.addedBonusFlag) {
         console.log("开始领取额外奖励");
         let getHelpAddedBonusResult = await request('getHelpAddedBonus');
+        if (getHelpAddedBonusResult.resultCode === '0') {
+          message += `【额外奖励${getHelpAddedBonusResult.result.reward}领取】${getHelpAddedBonusResult.message}\n`;
+        }
         console.log(`领取30g额外奖励结果：【${getHelpAddedBonusResult.message}】`);
-        message += `【额外奖励${getHelpAddedBonusResult.result.reward}领取】${getHelpAddedBonusResult.message}\n`;
       } else {
         console.log("已经领取过5好友助力额外奖励");
         message += `【额外奖励】已领取\n`;
@@ -252,6 +253,8 @@ async function masterHelpInit() {
  * 运行脚本时你自己的shareCode会在控制台输出, 可以将其分享给他人
  */
 async function slaveHelp() {
+  //$.log(`\n因1.6日好友助力功能下线。故暂时屏蔽\n`)
+  //return
   let helpPeoples = '';
   for (let code of newShareCodes) {
     console.log(`开始助力京东账号${$.index} - ${$.nickName}的好友: ${code}`);
@@ -272,7 +275,7 @@ async function slaveHelp() {
         console.log(`助力其他情况：${JSON.stringify(response)}`);
       }
     } else {
-      console.log(`助理好友结果: ${response.message}`);
+      console.log(`助力好友结果: ${response.message}`);
     }
   }
   if (helpPeoples && helpPeoples.length > 0) {
@@ -426,14 +429,14 @@ async function showMsg() {
 }
 function readShareCode() {
   return new Promise(async resolve => {
-    $.get({url: `http://api.turinglabs.net/api/v1/jd/pet/read/${randomCount}/`}, (err, resp, data) => {
+    $.get({url: `http://api.turinglabs.net/api/v1/jd/pet/read/${randomCount}/`, 'timeout': 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
           console.log(`${$.name} API请求失败，请检查网路重试`)
         } else {
           if (data) {
-            console.log(`随机取个${randomCount}码放到您固定的互助码后面`)
+            console.log(`随机取个${randomCount}码放到您固定的互助码后面(不影响已有固定互助)`)
             data = JSON.parse(data);
           }
         }
@@ -458,7 +461,9 @@ function shareCodesFormat() {
       const tempIndex = $.index > shareCodes.length ? (shareCodes.length - 1) : ($.index - 1);
       newShareCodes = shareCodes[tempIndex].split('@');
     }
+    //因好友助力功能下线。故暂时屏蔽
     const readShareCodeRes = await readShareCode();
+    //const readShareCodeRes = null;
     if (readShareCodeRes && readShareCodeRes.code === 200) {
       newShareCodes = [...new Set([...newShareCodes, ...(readShareCodeRes.data || [])])];
     }
@@ -540,7 +545,7 @@ function TotalBean() {
         "Connection": "keep-alive",
         "Cookie": cookie,
         "Referer": "https://wqs.jd.com/my/jingdou/my.shtml?sceneval=2",
-        "User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0") : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0")
+        "User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0")
       }
     }
     $.post(options, (err, resp, data) => {
@@ -594,7 +599,7 @@ async function request(function_id, body = {}) {
 //     url: `${JD_API_HOST}?functionId=${function_id}&appid=wh5&loginWQBiz=pet-town&body=${escape(JSON.stringify(body))}`,
 //     headers: {
 //       Cookie: cookie,
-//       UserAgent: $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0") : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
+//       UserAgent: $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
 //     }
 //   };
 // }
@@ -606,7 +611,7 @@ function taskUrl(function_id, body = {}) {
     body: `body=${escape(JSON.stringify(body))}&appid=wh5&loginWQBiz=pet-town&clientVersion=9.0.4`,
     headers: {
       'Cookie': cookie,
-      'User-Agent': $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0") : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
+      'User-Agent': $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
       'Host': 'api.m.jd.com',
       'Content-Type': 'application/x-www-form-urlencoded',
     }
