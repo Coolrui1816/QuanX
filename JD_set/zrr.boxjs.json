@@ -2,7 +2,7 @@
   "id": "zrr.app.sub",
   "name": "zrr应用订阅",
   "author": "@zrr",
-  "icon": "https://avatars0.githubusercontent.com/u/33308659?s=460&u=9223074586cb14f2ae7ee0953515f8781ded8be9&v=4",
+  "icon": "https://gitee.com/zhangzr/QuanX/raw/master/img/zrr.png",
   "repo": "https://github.com/Coolrui1816/QuanX/",
   "apps": [
     {
@@ -40,7 +40,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://github.com/Coolrui1816/QuanX",
+      "repo": "已退圈",
       "script": "https://github.com/Coolrui1816/QuanX/raw/master/JD_set/jd_joy_reward_20.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
