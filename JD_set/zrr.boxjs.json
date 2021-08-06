@@ -1,0 +1,50 @@
+{
+  "id": "zrr.app.sub",
+  "name": "zrr应用订阅",
+  "author": "@zrr",
+  "icon": "https://avatars0.githubusercontent.com/u/33308659?s=460&u=9223074586cb14f2ae7ee0953515f8781ded8be9&v=4",
+  "repo": "https://github.com/Coolrui1816/QuanX/",
+  "apps": [
+    {
+           "id": "jd_Joy_Reward",
+      "name": "宠汪汪积分兑换京豆",
+      "keys": [],
+      "settings": [
+        {
+          "id": "jdJoyRewardNotify",
+          "name": "静默运行",
+          "val": false,
+          "type": "boolean",
+          "desc": "开启后成功兑换到京豆也不发出系统弹窗通知"
+        },
+        {
+          "id": "joyRewardName",
+          "name": "是否兑换京豆",
+          "val": "1",
+          "type": "radios",
+          "desc": "默认开启兑换，如不想兑换可选择不兑换",
+          "items": [
+            {
+              "key": "0",
+              "label": "不兑换奖品(选择此项将不兑换奖品)"
+            },
+            {
+              "key": "1",
+              "label": "兑换20京豆"
+            },
+            {
+              "key": "500",
+              "label": "兑换500京豆"
+            }
+          ]
+        }
+      ],
+      "author": "@lxk0301",
+      "repo": "https://github.com/Coolrui1816/QuanX",
+      "script": "https://github.com/Coolrui1816/QuanX/raw/master/JD_set/jd_joy_reward_20.js",
+      "icons": [
+        "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
+      ]
+    }
+  ]
+}
